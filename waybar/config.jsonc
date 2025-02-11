@@ -1,0 +1,72 @@
+{
+	"layer": "top",
+	"modules-left": ["custom/launcher","hyprland/workspaces"],
+	"modules-center": ["clock"],
+	"modules-right": ["battery", "cpu","memory","network","pulseaudio"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon}  {volume}%",
+		"format-muted": "muted",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+
+       "cpu": {
+        "interval": 15,
+        "format": "  {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": "  {}%",
+        "max-length": 10
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi",
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% {icon} ",
+        "format-plugged": "{capacity}% ",
+        "format-alt":  "{time} {icon}",
+        "format-icons": ["", "", "", "", ""],
+	"on-update": "$HOME/.config/waybar/scripts/check_battery.sh"
+    },
+
+
+    "clock": {
+        "format": "  {:%A - %B %d, %Y - %R}",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "tooltip": false,
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+    }
+    },
+    "network": {
+        "interface": "enp3s0",
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": "  {ipaddr}/{cidr}",
+        "format-disconnected": "disconnected",
+        "tooltip": false,
+        "max-length": 50
+    }
+}

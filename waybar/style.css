@@ -1,0 +1,205 @@
+* {
+    border: none;
+    border-radius: 10; 
+    font-family: fira-code;
+    font-weight: bold; 
+    min-height: 10px; 
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    background-color: #8ec07c;
+}
+
+#workspaces button {
+    transition: none;
+    color: #282828;
+    background: transparent;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#workspaces button.persistent {
+    font-size: 12px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    transition: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    border-radius: inherit;
+    color: #383c4a;
+    background-color: #689d6a;
+}
+
+#workspaces button.active {
+    background: #689d6a;
+    color: white;
+    border-radius: inherit;
+}
+
+#custom-launcher{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #282828;
+    background-color: #8ec07c;
+
+
+}
+
+#clock {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #282828;
+
+    border-style: solid;
+    background-color: #8ec07c;
+}
+
+#pulseaudio {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 21px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #282828;
+    background-color: #8ec07c;
+}
+
+#pulseaudio.muted {
+    background-color: #fb4934;
+    color: #282828;
+}
+
+#memory {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;    
+    transition: none;
+    color: #282828;
+    background-color: #8ec07c;
+}
+
+#cpu {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;    
+    transition: none;
+    color: #282828;
+    background-color: #8ec07c;
+}
+
+#cpu:hover {
+    background-color: #689d6a;
+}
+#memory:hover {
+    background-color: #689d6a;
+}
+#pulseaudio:hover {
+    background-color: #689d6a;
+}
+#battery:hover {
+    background-color: #689d6a;
+}
+#clock:hover {
+    background-color: #689d6a;
+}
+#battery {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #282828;
+    background-color: #8ec07c;
+}
+
+#battery.charging {
+    color: #282828;
+}
+
+#battery.warning:not(.charging) {
+    color: black;
+}
+
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    color: #282828;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#tray {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: none;
+    color: #282828;
+}
+
+#network {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+
+transition: none;
+    background-color: #8ec07c;
+    color: #282828;
+    transition: 0.3s;
+}
+#network:hover { 
+   background-color: #689d6a;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+

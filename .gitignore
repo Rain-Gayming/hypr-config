@@ -1,0 +1,11 @@
+dconf/
+fontforge/
+go/
+simple-update-notifier/
+pulse/
+menus/
+vesktop/
+xfce4/
+mimeapps.list
+user-dirs.dirs
+user-dirs.locale
