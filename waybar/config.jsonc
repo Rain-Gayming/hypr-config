@@ -17,12 +17,12 @@
 
 
        "cpu": {
-        "interval": 15,
-        "format": "  {}%",
+        "interval": 5,
+        "format": "  {usage}%",
         "max-length": 10
     },
     "memory": {
-        "interval": 30,
+        "interval": 5,
         "format": "  {}%",
         "max-length": 10
     },
@@ -33,6 +33,7 @@
         "tooltip": false
     },
     "battery": {
+        "interval": 5,
         "states": {
             "warning": 30,
             "critical": 15
@@ -42,7 +43,7 @@
         "format-plugged": "{capacity}% ",
         "format-alt":  "{time} {icon}",
         "format-icons": ["", "", "", "", ""],
-	"on-update": "$HOME/.config/waybar/scripts/check_battery.sh"
+ 
     },
 
 
