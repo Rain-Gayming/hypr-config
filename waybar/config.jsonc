@@ -48,7 +48,7 @@
 
 
     "clock": {
-        "format": "  {:%A - %B %d, %Y - %R}",
+        "format": "  {:%B %d, %Y - %R}",
         "tooltip": false
     },
     "hyprland/workspaces": {

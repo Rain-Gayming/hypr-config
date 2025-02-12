@@ -1,9 +1,10 @@
 * {
     border: none;
     border-radius: 10; 
-    font-family: fira-code;
+    font-family: monocraft;
+    font-size: 15;
     font-weight: bold; 
-    min-height: 10px; 
+    min-height: 15px; 
 }
 
 window#waybar {
