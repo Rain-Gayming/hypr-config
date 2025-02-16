@@ -1,2 +1,3 @@
-2025/02/12-10:23:27.447 5386 Creating DB /home/rain/.config/obsidian/Session Storage since it was missing.
-2025/02/12-10:23:27.453 5386 Reusing MANIFEST /home/rain/.config/obsidian/Session Storage/MANIFEST-000001
+2025/02/14-08:48:06.205 a971 Reusing MANIFEST /home/rain/.config/obsidian/Session Storage/MANIFEST-000001
+2025/02/14-08:48:06.206 a971 Recovering log #3
+2025/02/14-08:48:06.207 a971 Reusing old log /home/rain/.config/obsidian/Session Storage/000003.log 
